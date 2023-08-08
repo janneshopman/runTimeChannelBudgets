@@ -21,10 +21,10 @@ discreteBudgets
         #include "uncorrectedSnGrad.H"
     #};
 
-	codeOptions
-	#{
-		-I$(FOAM_CASE)/system
-	#};
+    codeOptions
+    #{
+        -I$(FOAM_CASE)/system
+    #};
 
     codeWrite
     #{
