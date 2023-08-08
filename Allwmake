@@ -1,0 +1,4 @@
+#!/bin/bash
+. "${WM_PROJECT_DIR:?}"/wmake/scripts/AllwmakeParseArguments
+
+wmake applications/utilities/channelBudgets
