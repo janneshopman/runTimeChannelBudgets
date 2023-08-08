@@ -70,7 +70,7 @@ channelBudgets can be found in the "applications/utilities/channelBudgets" direc
 channelBudgets -latestTime
 </pre>
 
-* the "-latestTime" option should be left away if intermediate field averages are output by calcBudgets.
+* The "-latestTime" option should be left away if intermediate field averages are output by calcBudgets.
 * The utility is based on the "postChannel" utility. It reads the budget component fields in "readFields.H", combines them to form the budget terms in "calculateFields.H" and finally applies spatial averaging in "collapse", after which the resulting line plots are written to "graphs/\<timeDirectory\>".
 * The utility reads the "postChannelDict" inside the "constant" directory, containing mesh information for averaging. An example is found in "cases/templateCase/constant/postChannelDict".
 
@@ -84,7 +84,7 @@ This directory should be copied before it is run from inside the new directory w
 </pre> 
 
 * This runs the case in parallel and automatically runs the post-processing afterwards, to create the data files in the "graphs" directory.
-* The templateCase was set up to be run with RKSymFoam using Runge-Kutta 3 temporal integration.
+* The templateCase was set up to be run with RKSymFoam using Runge-Kutta 3 temporal integration, see: github.com/janneshopman/RKSymFoam.
 * Any desired solver, for example "icoFoam" can be used by changing the "application" variable in the "system/controlDict": 
 
 <pre>
@@ -100,7 +100,7 @@ python plotBudgets.py
 </pre>
 
 * The endTime and nu variables have to be set, see the template case for examples.
-* Budget terms are graphed with data of Vremand and Kuerten as a reference.
+* Budget terms are graphed with data of Vreman and Kuerten as a reference.
 * Resulting plots will be found in the "postProcess/results" directory.
 
 ## Contact & support
