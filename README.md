@@ -23,7 +23,10 @@ This can be avoided by noting that the kinetic energy budget terms can be rewrit
 
 The terms on the right-hand side can be averaged during run-time and only have to be written at the final time-step of the simulation. The necessary terms are created, calculated and averaged by the calcBudgets functionObject.
 The spatial averaging and the recombination of the terms on the right-hand side to form the budget term on the left-hand side is handled by the channelBudgets utility. This creates a directory with the calculated budget terms as a function of the channel-height.
-Furthermore, a python script was included to nicely plot the terms and compare them to reference data of Vreman and Kuerten in: Vreman, A. W., & Kuerten, J. G. (2014). Comparison of direct numerical simulation databases of turbulent channel flow at Reτ= 180. Physics of Fluids, 26(1).
+
+The necessary terms to be averaged and how to combine them are derived in runTimeChannelBudgets.pdf, where the reasoning behind this method is also explained.
+
+Finally, a python script was included to nicely plot the terms and compare them to reference data of Vreman and Kuerten in: Vreman, A. W., & Kuerten, J. G. (2014). Comparison of direct numerical simulation databases of turbulent channel flow at Reτ= 180. Physics of Fluids, 26(1).
 
 ## Prerequisites
 
